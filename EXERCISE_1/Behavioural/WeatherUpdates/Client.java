@@ -1,76 +1,36 @@
-package WeatherUpdates;
+package EXERCISE_1.Behavioural.WeatherUpdates;
+
 import java.util.Scanner;
+
 
 public class Client {
     public static void main(String[] args) {
-        ConcreteWeatherData weatherData = new ConcreteWeatherData();
         Scanner scanner = new Scanner(System.in);
+        ConcreteSubject weatherStation = new ConcreteSubject();
 
-        // Default observers
-        DisplayDevice phone = new ConcreteDisplayDevice("Phone");
-        DisplayDevice tablet = new ConcreteDisplayDevice("Tablet");
+        // Add some observers (subscribers)
+        Observer user1 = new ConcreteObserver("Alice");
+        Observer user2 = new ConcreteObserver("Bob");
+        Observer user3 = new ConcreteObserver("Charlie");
 
-        weatherData.registerObserver(phone);
-        weatherData.registerObserver(tablet);
+        weatherStation.registerObserver(user1);
+        weatherStation.registerObserver(user2);
+        weatherStation.registerObserver(user3);
 
-        System.out.println("🌦 Weather Station Started!");
-        System.out.println("Options:");
-        System.out.println("1. Enter new temperature");
-        System.out.println("2. Add new display device");
-        System.out.println("3. Remove a display device");
-        System.out.println("4. Exit");
-
+        // Keep taking weather updates from user
+        String weather;
         while (true) {
-            System.out.print("\nChoose option: ");
-            String choice = scanner.nextLine();
+            System.out.print("\nEnter weather update (or type 'exit' to quit): ");
+            weather = scanner.nextLine();
 
-            switch (choice) {
-                case "1":
-                    System.out.print("Enter temperature: ");
-                    String input = scanner.nextLine();
-                    try {
-                        float temp = Float.parseFloat(input);
-                        weatherData.setTemperature(temp);
-                    } catch (NumberFormatException e) {
-                        System.out.println("❌ Invalid input! Enter a number.");
-                    }
-                    break;
-
-                case "2":
-                    System.out.print("Enter new device name: ");
-                    String newDevice = scanner.nextLine();
-                    DisplayDevice device = new ConcreteDisplayDevice(newDevice);
-                    weatherData.registerObserver(device);
-                    System.out.println("✅ Device '" + newDevice + "' added.");
-                    break;
-
-                case "3":
-                    System.out.print("Enter device name to remove: ");
-                    String removeDevice = scanner.nextLine();
-                    // Find and remove device by name
-                    DisplayDevice toRemove = null;
-                    for (DisplayDevice d : new java.util.ArrayList<>(weatherData.devices)) {
-                        if (d.toString().equalsIgnoreCase(removeDevice)) {
-                            toRemove = d;
-                            break;
-                        }
-                    }
-                    if (toRemove != null) {
-                        weatherData.removeObserver(toRemove);
-                        System.out.println("✅ Device '" + removeDevice + "' removed.");
-                    } else {
-                        System.out.println("❌ No such device found.");
-                    }
-                    break;
-
-                case "4":
-                    System.out.println("👋 Exiting Weather Station...");
-                    scanner.close();
-                    return;
-
-                default:
-                    System.out.println("❌ Invalid choice. Try again.");
+            if (weather.equalsIgnoreCase("exit")) {
+                System.out.println("Exiting Weather Station...");
+                break;
             }
+
+            weatherStation.setWeather(weather);
         }
+
+        scanner.close();
     }
 }
