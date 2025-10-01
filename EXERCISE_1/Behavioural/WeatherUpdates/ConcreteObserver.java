@@ -1,20 +1,14 @@
-package WeatherUpdates;
+package EXERCISE_1.Behavioural.WeatherUpdates;
 
-class ConcreteObserver implements DisplayDevice {
-    private String deviceName;
+public class ConcreteObserver implements Observer {
+    private String name;
 
-    public ConcreteDisplayDevice(String deviceName) {
-        this.deviceName = deviceName;
+    public ConcreteObserver(String name) {
+        this.name = name;
     }
 
     @Override
-    public void update(ConcreteWeatherData data) {
-        System.out.println(deviceName + " Display: Temperature is "
-                + data.getTemperature() + "°C");
-    }
-
-    @Override
-    public String toString() {
-        return deviceName;
+    public void update(String weatherUpdate) {
+        System.out.println(name + " received weather update: " + weatherUpdate);
     }
 }
