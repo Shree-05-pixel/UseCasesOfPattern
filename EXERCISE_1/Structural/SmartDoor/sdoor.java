@@ -1,4 +1,4 @@
-package SmartDoor;
+package EXERCISE_1.Structural.SmartDoor;
 
 import java.util.Scanner;
 
@@ -46,3 +46,4 @@ public class sdoor {
         proxyDoor.open();
     }
 }
+
