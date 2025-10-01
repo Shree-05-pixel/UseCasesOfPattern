@@ -187,29 +187,30 @@ This project simulates a Smart Home System that manages various smart devices su
 
 **Features**
 
--Add and Remove Devices: Easily manage devices in the system.
+- Add and Remove Devices: Easily manage devices in the system.
 
--Turn Devices On and Off: Control the state of devices manually.
+- Turn Devices On and Off: Control the state of devices manually.
 
--Set Schedules: Schedule actions for devices at specific times.
+- Set Schedules: Schedule actions for devices at specific times.
 
--Add Automation Triggers: Automate device actions based on conditions (e.g., temperature thresholds).
+- Add Automation Triggers: Automate device actions based on conditions (e.g., temperature thresholds).
 
--Show Device Statuses: Display the current status of all devices.
+- Show Device Statuses: Display the current status of all devices.
 
--Show Schedules: View all scheduled actions.
+- Show Schedules: View all scheduled actions.
 
--Authorized Users for Doors: Doors can only be unlocked for authorized users using the Proxy pattern.
+- Authorized Users for Doors: Doors can only be unlocked for authorized users using the Proxy pattern.
 
 **Design Patterns Used**
 
--Factory Method Pattern: Used to create different types of devices dynamically.
+- Factory Method Pattern: Used to create different types of devices dynamically.
 
--Proxy Pattern: Provides security for sensitive devices like doors by allowing only authorized users to perform actions.
+- Proxy Pattern: Provides security for sensitive devices like doors by allowing only authorized users to perform actions.
 
--Observer Pattern: Central hub notifies devices or observers whenever a state change occurs (e.g., automation triggers).
+- Observer Pattern: Central hub notifies devices or observers whenever a state change occurs (e.g., automation triggers).
 
 SmartHome/
+
 │
 ├─ SmartHomeSystem.java       # Main program
 
