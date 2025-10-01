@@ -1,4 +1,4 @@
-package MobileCharger;
+package EXERCISE_1.Creational.MobileCharger;
 
 import java.util.Scanner;
 
@@ -77,3 +77,4 @@ public class Adaptereg {
         charger.charge();
     }
 }
+
