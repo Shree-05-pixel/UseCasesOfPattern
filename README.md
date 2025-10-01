@@ -1,6 +1,6 @@
 # EIAssignment
 
-This repository demonstrates **6 core Java Design Patterns** with **real-time user input** examples. Each pattern has a unique and relatable use case.
+This repository demonstrates **6 core Java Design Patterns** with **real-time user input** examples and a Console Application. Each pattern has a unique and relatable use case.
 
 ---
 **EXERCISE 1**- JAVA Design Patterns with Usecases
@@ -19,10 +19,15 @@ Simulates a **Weather Station** where multiple display devices (Phone, Tablet, L
 
 ### Project Structure
 WeatherObserverPattern/
+
 ├── WeatherData.java # Subject interface
+
 ├── ConcreteWeatherData.java # Concrete Subject
+
 ├── DisplayDevice.java # Observer interface
+
 ├── ConcreteDisplayDevice.java # Concrete Observer
+
 ├── Main.java # User input and observer registration
 
 
@@ -43,6 +48,7 @@ E-commerce payment system where the user can select **Credit Card, UPI, or Cash 
 
 ### Project Structure
 StrategyPatternPayment/
+
 ├── PaymentStrategy.java # Strategy interface
 
 ├── CreditCardPayment.java # Concrete Strategy
@@ -72,6 +78,7 @@ Simulates a **Universal Charger** that adapts to different phone brands (Samsung
 
 ### Project Structure
 AdapterPatternCharger/
+
 ├── MobileCharger.java # Target interface
 
 ├── SamsungCharger.java # Adaptee
@@ -103,6 +110,7 @@ Food Delivery App where the user selects **cuisine type** (Indian, Chinese, Ital
 ### Project Structure
 
 FactoryPatternFood/
+
 ├── Food.java # Product interface
 
 ├── IndianFood.java # Concrete Product
@@ -130,6 +138,7 @@ A logging system where **only one instance of Logger exists**. Demonstrates **Si
 
 ### Project Structure
 SingletonPatternLogger/
+
 ├── Logger.java # Singleton Logger class
 
 ├── Main.java # User input and logging demonstration
@@ -169,7 +178,7 @@ Overview
 
 This project simulates a Smart Home System that manages various smart devices such as lights, thermostats, and door locks. It allows users to add, remove, and control devices, set schedules, and add automation triggers. The system demonstrates the use of design patterns like Factory Method, Proxy, and Observer to achieve modularity and extensibility.
 
-Features
+**Features**
 
 Add and Remove Devices: Easily manage devices in the system.
 
@@ -185,7 +194,7 @@ Show Schedules: View all scheduled actions.
 
 Authorized Users for Doors: Doors can only be unlocked for authorized users using the Proxy pattern.
 
-Design Patterns Used
+**Design Patterns Used**
 
 Factory Method Pattern: Used to create different types of devices dynamically.
 
@@ -223,28 +232,29 @@ SmartHome/
 
 ├─ Schedule.java              # Represents a schedule for a device
 
-Classes Overview
 
-CentralHub:
+**Classes Overview**
+
+1)CentralHub:
 Manages all smart devices, schedules, and automation triggers. Implements the Subject interface for Observer pattern notifications.
 
-Device Interface:
+2)Device Interface:
 Defines common methods (turnOn, turnOff, getStatus, etc.) that all devices must implement.
 
-Light, Thermostat, Door:
+3)Light, Thermostat, Door:
 Concrete implementations of the Device interface. Thermostat supports temperature thresholds, and Door supports Proxy-based authorization.
 
-DeviceFactory:
+4)DeviceFactory:
 Factory class to create devices dynamically based on type.
 
-DeviceProxy:
+5)DeviceProxy:
 Proxy class that ensures only authorized users can control sensitive devices like doors.
 
-Automation & Trigger:
+5)Automation & Trigger:
 Automation handles triggers (conditions + actions). Triggers specify conditions (like temperature thresholds) and actions (turning devices on/off).
 
-Scheduler & Schedule:
+6)Scheduler & Schedule:
 Scheduler manages scheduled actions for devices. Schedule represents a device’s scheduled action at a specific time.
 
-Observer & Subject Interfaces:
+7)Observer & Subject Interfaces:
 Implements Observer pattern to notify observers of state changes.
