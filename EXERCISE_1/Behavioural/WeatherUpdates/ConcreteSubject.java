@@ -1,35 +1,37 @@
-package WeatherUpdates;
+package EXERCISE_1.Behavioural.WeatherUpdates;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConcreteWeatherData implements WeatherData {
-    private float temperature;
-    private List<DisplayDevice> devices = new ArrayList<>();
 
-    public void setTemperature(float temperature) {
-        this.temperature = temperature;
-        notifyObservers();
-    }
+public class ConcreteSubject implements Subject {
+    private List<Observer> observers = new ArrayList<>();
+    private String weather; // current weather update
 
-    public float getTemperature() {
-        return temperature;
+    @Override
+    public void registerObserver(Observer o) {
+        observers.add(o);
     }
 
     @Override
-    public void registerObserver(DisplayDevice device) {
-        devices.add(device);
-    }
-
-    @Override
-    public void removeObserver(DisplayDevice device) {
-        devices.remove(device);
+    public void removeObserver(Observer o) {
+        observers.remove(o);
     }
 
     @Override
     public void notifyObservers() {
-        for (DisplayDevice device : devices) {
-            device.update(this);
+        for (Observer o : observers) {
+            o.update(weather);
         }
     }
+
+    // Set new weather update
+    public void setWeather(String weather) {
+        this.weather = weather;
+        System.out.println("Weather Station updated: " + weather);
+        notifyObservers();
+    }
 }
+
+}
+
