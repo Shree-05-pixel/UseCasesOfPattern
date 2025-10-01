@@ -4,7 +4,8 @@ This repository demonstrates **6 core Java Design Patterns** with **real-time us
 
 ---
 **EXERCISE 1**- JAVA Design Patterns with Usecases
-##1) Weather Update – Observer Pattern
+
+1) Weather Update – Observer Pattern
 
 ### Overview
 Simulates a **Weather Station** where multiple display devices (Phone, Tablet, Laptop) automatically receive updates when the temperature changes. Demonstrates the **Observer pattern** for decoupled communication between the weather data and display devices.
@@ -171,9 +172,12 @@ ProxyPatternSmartDoor/
 ├── Main.java # User input and door access   
 
 
-**EXERCISE 2** -Console Application
 
-Smart Home System
+ ## EXERCISE 2-Console Application
+ 
+
+**Smart Home System**
+
 Overview
 
 This project simulates a Smart Home System that manages various smart devices such as lights, thermostats, and door locks. It allows users to add, remove, and control devices, set schedules, and add automation triggers. The system demonstrates the use of design patterns like Factory Method, Proxy, and Observer to achieve modularity and extensibility.
