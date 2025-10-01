@@ -1,11 +1,11 @@
-# EIAssignment
+# EI Assignment
 
-This repository demonstrates **6 core Java Design Patterns** with **real-time user input** examples and a Console Application. Each pattern has a unique and relatable use case.
+This repository demonstrates **a Console Application** and **6 core Java Design Patterns** with **real-time user input** examples x. Each pattern has a unique and relatable use case.
 
 ---
 **EXERCISE 1**- JAVA Design Patterns with Usecases
 
-1) Weather Update – Observer Pattern
+## 1) Weather Update – Observer Pattern
 
 ### Overview
 Simulates a **Weather Station** where multiple display devices (Phone, Tablet, Laptop) automatically receive updates when the temperature changes. Demonstrates the **Observer pattern** for decoupled communication between the weather data and display devices.
@@ -178,7 +178,7 @@ ProxyPatternSmartDoor/
 
 **Smart Home System**
 
-Overview
+**Overview**
 
 This project simulates a Smart Home System that manages various smart devices such as lights, thermostats, and door locks. It allows users to add, remove, and control devices, set schedules, and add automation triggers. The system demonstrates the use of design patterns like Factory Method, Proxy, and Observer to achieve modularity and extensibility.
 
@@ -239,26 +239,26 @@ SmartHome/
 
 **Classes Overview**
 
-1)CentralHub:
+*1)CentralHub:*
 Manages all smart devices, schedules, and automation triggers. Implements the Subject interface for Observer pattern notifications.
 
-2)Device Interface:
+*2)Device Interface:*
 Defines common methods (turnOn, turnOff, getStatus, etc.) that all devices must implement.
 
-3)Light, Thermostat, Door:
+*3)Light, Thermostat, Door:*
 Concrete implementations of the Device interface. Thermostat supports temperature thresholds, and Door supports Proxy-based authorization.
 
-4)DeviceFactory:
+*4)DeviceFactory:*
 Factory class to create devices dynamically based on type.
 
-5)DeviceProxy:
+*5)DeviceProxy:*
 Proxy class that ensures only authorized users can control sensitive devices like doors.
 
-5)Automation & Trigger:
+*6)Automation & Trigger:*
 Automation handles triggers (conditions + actions). Triggers specify conditions (like temperature thresholds) and actions (turning devices on/off).
 
-6)Scheduler & Schedule:
+*7)Scheduler & Schedule:*
 Scheduler manages scheduled actions for devices. Schedule represents a device’s scheduled action at a specific time.
 
-7)Observer & Subject Interfaces:
+*8)Observer & Subject Interfaces:*
 Implements Observer pattern to notify observers of state changes.
