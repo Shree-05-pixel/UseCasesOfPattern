@@ -1,5 +1,5 @@
-package WeatherUpdates;
+package EXERCISE_1.Behavioural.WeatherUpdates;
 
- interface DisplayDevice {
-    void update(ConcreteWeatherData data);
+public interface Observer {
+    void update(String weatherUpdate);
 }
