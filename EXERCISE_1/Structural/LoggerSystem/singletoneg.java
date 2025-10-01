@@ -1,4 +1,4 @@
-package LoggerSystem;
+package EXERCISE_1.Creational.LoggerSystem;
 
 import java.util.Scanner;
 import java.time.LocalDateTime;
@@ -48,3 +48,4 @@ public class singletoneg {
         }
     }
 }
+
