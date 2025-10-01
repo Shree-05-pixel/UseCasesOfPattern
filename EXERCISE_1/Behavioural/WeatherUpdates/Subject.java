@@ -1,11 +1,7 @@
-package WeatherUpdates;
-
-import java.util.ArrayList;
-import java.util.List;
-
-// Abstraction for Subject
- interface WeatherData {
-    void registerObserver(DisplayDevice device);
-    void removeObserver(DisplayDevice device);
+package EXERCISE_1.Behavioural.WeatherUpdates;
+ 
+public interface Subject {
+    void registerObserver(Observer o);
+    void removeObserver(Observer o);
     void notifyObservers();
 }
