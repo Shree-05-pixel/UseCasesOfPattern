@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 import java.util.Scanner;
 
@@ -130,3 +131,4 @@ public class SmartHomeSystem {
         }
     }
 }
+
