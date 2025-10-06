@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 public class Thermostat implements Device {
     private final int id;
@@ -70,3 +71,4 @@ public class Thermostat implements Device {
     @Override public void turnOff() {}
     @Override public void update() {}
 }
+
