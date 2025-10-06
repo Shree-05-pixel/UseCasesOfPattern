@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 public interface Device {
     int getId();
@@ -8,3 +9,4 @@ public interface Device {
     String getStatus();
     void update(); // for observer pattern or automation triggers
 }
+
