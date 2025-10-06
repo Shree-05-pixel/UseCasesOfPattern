@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 public class Schedule {
     private final int deviceId;
@@ -14,4 +15,5 @@ public class Schedule {
     public int getDeviceId() { return deviceId; }
     public String getTime() { return time; }
     public String getCommand() { return command; }
+
 }
