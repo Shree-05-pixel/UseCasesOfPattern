@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -11,4 +12,5 @@ public class LoggerUtil {
         String time = LocalDateTime.now().format(FORMATTER);
         System.out.println("[" + time + "] " + message);
     }
+
 }
