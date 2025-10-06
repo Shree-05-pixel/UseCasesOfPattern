@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,3 +19,4 @@ public class Scheduler {
         schedules.forEach(s -> LoggerUtil.log("Device " + s.getDeviceId() + " " + s.getCommand() + " at " + s.getTime()));
     }
 }
+
