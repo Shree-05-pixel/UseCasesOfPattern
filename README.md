@@ -19,7 +19,7 @@ This document classifies common design patterns into their respective categories
 - **Adapter Pattern**  
   Converts the interface of a class into another interface that the client expects, allowing incompatible interfaces to work together.
 
-  - **Proxy Pattern**  
+- **Proxy Pattern**  
   Controls access to another object and can add additional behavior such as logging, caching, or access control.
 
 ## 3. Behavioral Patterns
