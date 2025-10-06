@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 
 public class Door implements Device {
@@ -16,3 +17,4 @@ public class Door implements Device {
     @Override public String getStatus() { return "Door " + id + " is " + (locked ? "Locked" : "Unlocked"); }
     @Override public void update() {}
 }
+
