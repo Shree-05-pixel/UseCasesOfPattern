@@ -1,4 +1,4 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
 
 
 
@@ -12,3 +12,4 @@ public class DeviceFactory {
         }
     }
 }
+
