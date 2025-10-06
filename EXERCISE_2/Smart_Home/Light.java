@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 
 public class Light implements Device {
@@ -16,3 +17,4 @@ public class Light implements Device {
     @Override public String getStatus() { return "Light " + id + " is " + (isOn ? "On" : "Off"); }
     @Override public void update() {}
 }
+
