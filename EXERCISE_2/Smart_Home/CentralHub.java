@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,3 +69,4 @@ public class CentralHub implements Subject {
         observers.forEach(o -> o.update(eventType, data));
     }
 }
+
