@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 
 import java.util.HashSet;
@@ -60,3 +61,4 @@ public class DeviceProxy implements Device {
     @Override
     public String getDevice() { return device.getDevice(); }
 }
+
