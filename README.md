@@ -3,7 +3,33 @@
 This repository demonstrates **a Console Application** and **6 core Java Design Patterns** with **real-time user input** examples x. Each pattern has a unique and relatable use case.
 
 ---
-**EXERCISE 1**- JAVA Design Patterns with Usecases
+ ## EXERCISE 1 - JAVA Design Patterns with Usecases
+# Design Patterns Classification
+
+This document classifies common design patterns into their respective categories with a brief description.
+
+## 1. Creational Patterns
+- **Singleton Pattern**  
+  Ensures that only one instance of a class is created and provides a global access point.
+
+- **Factory Pattern**  
+  Creates objects without specifying the exact class of object that will be created.
+
+## 2. Structural Patterns
+- **Adapter Pattern**  
+  Converts the interface of a class into another interface that the client expects, allowing incompatible interfaces to work together.
+
+  - **Proxy Pattern**  
+  Controls access to another object and can add additional behavior such as logging, caching, or access control.
+
+## 3. Behavioral Patterns
+- **Strategy Pattern**  
+  Defines a family of algorithms, encapsulates each one, and makes them interchangeable.  
+  (Can appear multiple times if demonstrating different use cases)
+
+- **Observer Pattern**  
+  Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+
 
 ## 1) Weather Update – Observer Pattern
 
