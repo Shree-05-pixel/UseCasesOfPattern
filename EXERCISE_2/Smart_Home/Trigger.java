@@ -1,4 +1,5 @@
-package Smart_Home;
+package EXERCISE_2.Smart_Home;
+
 
 
 public class Trigger {
@@ -13,4 +14,5 @@ public class Trigger {
     public String getCondition() { return condition; }
     public String getAction() { return action; }
 }
+
 
